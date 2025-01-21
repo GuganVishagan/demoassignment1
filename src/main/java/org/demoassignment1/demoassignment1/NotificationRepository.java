@@ -5,16 +5,16 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class Repository {
+public class NotificationRepository {
 
     private final List<Notification> notifications = new ArrayList<>();
     private final List<RecipientNotification> recipientNotifications = new ArrayList<>();
 
-    private void saveNotification(Notification notification) {
+    public void saveNotification(Notification notification) {
         notifications.add(notification);
     }
 
-    private void saveRecipientNotification(RecipientNotification recipientNotification) {
+    public void saveRecipientNotification(RecipientNotification recipientNotification) {
         recipientNotifications.add(recipientNotification);
     }
 
